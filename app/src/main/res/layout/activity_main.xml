@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="X-Requested-With Header Removal Demo"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#E3F2FD"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Test Button -->
+    <Button
+        android:id="@+id/testButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🔍 Start Header Removal Test"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Instructions -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Instructions:\n1. Click the test button\n2. Watch the logs below\n3. Check WebView for SUCCESS/FAILED"
+        android:textSize="14sp"
+        android:background="#FFF3E0"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Log Output -->
+    <TextView
+        android:id="@+id/logTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:text="Logs will appear here..."
+        android:background="#F5F5F5"
+        android:padding="12dp"
+        android:textSize="12sp"
+        android:fontFamily="monospace"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="16dp" />
+
+    <!-- WebView -->
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:background="#FFFFFF" />
+
+</LinearLayout>

@@ -70,7 +70,7 @@
             android:id="@+id/postDataInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="POST data (e.g., key=value&foo=bar)"
+            android:hint="POST data (e.g., key=value&amp;foo=bar)"
             android:inputType="text"
             android:padding="12dp"
             android:background="#FFF3E0"
